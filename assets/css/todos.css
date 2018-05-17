@@ -1,10 +1,84 @@
-#container{
-  background: rgb(218, 218, 218);
-  margin: 0 auto;
-  width: 400px;
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #FC466B;
+  background: -webkit-linear-gradient(to right, rgb(63, 94, 251, 0.5), rgb(252, 71, 108, 0.5)), url('../img/todos-bg.jpg');
+  background: linear-gradient(to right, rgb(63, 94, 251, 0.8) , rgb(252, 71, 108, 0.8)), url('../img/todos-bg.jpg');
+  background-size: cover;
 }
 
-.completed{
+#container {
+  background-color: rgb(247, 247, 247);
+  margin: 100px auto;
+  width: 400px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  background-color: rgb(23, 123, 215);
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.fa-plus {
+  float: right;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  height: 50px;
+  line-height: 50px;
+  color: rgb(102, 102, 102);
+}
+
+li:nth-child(2n) {
+  background-color: rgb(247, 247, 247);
+}
+
+span {
+  background-color: rgb(213, 33, 33);
+  height: 50px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: .2s linear;
+  opacity: 0;
+}
+
+li:hover span{
+  width: 50px;
+  opacity: 1;
+}
+
+input {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  color: rgb(23, 123, 215);
+  border: 3px solid rgba(0, 0, 0, 0);
+  font-size: 18px;
+}
+
+input:focus {
+  background: rgb(247, 247, 247);
+  border: 3px solid rgb(23, 123, 215);
+  outline: none;
+}
+
+.completed {
   color: gray;
   text-decoration: line-through;
 }
